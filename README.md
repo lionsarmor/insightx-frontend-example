@@ -1,0 +1,1 @@
+insightx-frontend-example
