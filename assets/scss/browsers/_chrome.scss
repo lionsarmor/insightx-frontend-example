@@ -1,0 +1,77 @@
+.chrome {
+    /* width */
+::-webkit-scrollbar {
+    width: 7px !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #131212; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(77, 72, 72); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 0, 0); 
+}
+    /******** DEFAULT / AUTHED ************/
+    .brand{
+    
+    position: relative; 
+    left:5.4vh;
+    top:-0.4vh;
+    width:40px;
+        }
+        
+        .newLogo{    
+            width:200px;
+        }
+    /********************TABLES*******************************/
+    .table-labels{
+        font-size: 12px !important;
+        font-weight: bold;
+        color: white !important;
+      }
+      .tabletext{
+        font-size: 11px !important;
+        color: white;
+      }
+/************************COINS PAGE************************************/
+.page-margin {
+    margin-top: -2.5%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.targetPOS{
+    left:-140px
+}
+.chromeMargin{
+    top:-4%;
+}
+/**************************PORTFOLIO*************************************/
+.legendEmblemLeft{
+    position: relative; 
+    left:-15vh;
+     top:-2.5vh;
+}
+.legendEmblemRight{
+position: relative; 
+right:-9vh;
+top:-2.8vh;
+}
+.legendSymbolLeft{
+    position: relative;
+    left: -29vh;
+    top:-2.5vh;
+    }
+    .legendSymbolRight{
+    position: relative;
+    right:7vh;
+    top:-2.5vh;
+    }
+    }
+    

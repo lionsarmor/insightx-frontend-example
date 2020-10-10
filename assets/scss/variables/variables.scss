@@ -1,0 +1,137 @@
+/**************************************************************************/
+// COLORS
+/**************************************************************************/
+//// Vuetify Colors ////
+
+// base colors //
+$color-v-white                    : #FFFFFF;
+$color-v-black                    : #000000;
+
+// grey //
+$color-v-grey-lighten-5           : #FAFAFA;
+$color-v-grey-lighten-4           : #F5F5F5;
+$color-v-grey-lighten-3           : #EEEEEE;
+$color-v-grey-lighten-2           : #E0E0E0;
+$color-v-grey-lighten-1           : #BDBDBD;
+$color-v-grey                     : #9E9E9E;
+$color-v-grey-darken-1            : #757575;  
+$color-v-grey-darken-2            : #616161;
+$color-v-grey-darken-3            : #424242;
+$color-v-grey-darken-4            : #212121;
+
+// red //
+$color-v-red-lighten-4            : #FFCDD2;
+$color-v-red-lighten-3            : #EF9A9A;
+$color-v-red-lighten-2            : #E57373;
+$color-v-red-lighten-1            : #EF5350;
+$color-v-red                      : #F44336;
+$color-v-red-darken-1             : #E53935;
+$color-v-red-darken-2             : #D32F2F;
+$color-v-red-darken-3             : #C62828;
+$color-v-red-darken-4             : #B71C1C;
+
+// blue //
+$color-v-blue-lighten-5           : #E3F2FD;
+$color-v-blue-lighten-4           : #BBDEFB;
+$color-v-blue-lighten-3           : #90CAF9;
+$color-v-blue-lighten-2           : #64B5F6;
+$color-v-blue-lighten-1           : #42A5F5;
+$color-v-blue                     : #2196F3;
+$color-v-blue-darken-1            : #1E88E5;
+$color-v-blue-darken-2            : #1976D2;
+$color-v-blue-darken-3            : #1565C0;
+$color-v-blue-darken-4            : #0D47A1;
+
+// green //
+$color-v-green-lighten-4          : #C8E6C9;
+$color-v-green-lighten-3          : #A5D6A7;
+$color-v-green-lighten-2          : #81C784;
+$color-v-green-lighten-1          : #66BB6A;
+$color-v-green                    : #4CAF50;
+$color-v-green-darken-1           : #43A047;
+$color-v-green-darken-2           : #388E3C;
+$color-v-green-darken-3           : #2E7D32;
+$color-v-green-darken-4           : #1B5E20;
+
+// orange //
+$color-v-orange                    : #FFCFB2;
+
+// light green
+$color-v-light-green-accent-4     : #64DD17;
+
+
+
+//// App Colors ////
+// transparent colors
+$color-app-white-trans-25         : rgba( 255, 255, 255, 0.25);
+$color-app-white-trans-50         : rgba( 255, 255, 255, 0.5);
+$color-app-white-trans-75         : rgba( 255, 255, 255, 0.75);
+$color-app-white-trans-85         : rgba( 255, 255, 255, 0.85);
+
+$color-app-black-trans-25         : rgba( 0, 0, 0, 0.25);
+$color-app-black-trans-50         : rgba( 0, 0, 0, 0.5);
+$color-app-black-trans-75         : rgba( 0, 0, 0, 0.75);
+
+$color-app-red-trans-11           : rgba( 201, 27, 50, 0.11);
+
+
+// global colors
+$color-app-background             : $color-v-grey-lighten-3;
+$color-app-primary                : $color-v-blue-darken-4;
+$color-app-text                   : $color-v-grey-darken-2;
+$color-app-navigation-background  : $color-v-grey-darken-4;
+$color-app-nav-item-active        : $color-v-white;
+$color-app-nav-item-inactive      : $color-v-grey-lighten-1;
+$color-app-lists                  : $color-v-grey-lighten-2;
+
+
+
+
+/**************************************************************************/
+// SCREEN SIZES
+/**************************************************************************/
+$screen-width-min                 : 360px;
+
+
+
+/**************************************************************************/
+// BREAKPOINTS
+/**************************************************************************/
+$break-xsmall                     : 580px;
+$break-small                      : 768px;
+$break-medium                     : 1024px;
+$break-large                      : 1200px;
+$break-xlarge                     : Infinity;
+
+
+
+/**************************************************************************/
+// FONT WEIGHTS
+/**************************************************************************/
+$font-medium                      : 400;
+$font-bold                        : 500;
+$font-bolder                      : 800;
+
+
+
+/**************************************************************************/
+// BORDER RADIUS
+/**************************************************************************/
+$border-radius                    : 4px;
+
+
+
+/**************************************************************************/
+// MARGINS | PADDINGS
+/**************************************************************************/
+$default-padding                  : 1rem;
+$default-margin                   : 1rem;
+$padding-notification-drawer-content        : 1.625rem; 
+$padding-notification-item-content        : 0.5rem 0.5rem 0.5rem 1rem;
+
+
+/**************************************************************************/
+// WIDTHS / HEIGHTS
+/**************************************************************************/
+$navigation-container-width       : 60px;
+$navigation-container-height      : 100vh;

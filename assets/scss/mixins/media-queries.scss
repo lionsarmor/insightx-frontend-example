@@ -1,0 +1,59 @@
+/*
+	RESPOND-TO
+		Media query will respond only to viewport within the specific size
+*/
+@mixin respond-to( $media )
+{
+	@if $media == xsmall {
+		@media only screen and (max-width: $break-xsmall) { @content; }
+	}
+
+	@if $media == small {
+		@media only screen and (min-width: $break-xsmall + 1) and (max-width: $break-small) { @content; }
+	}
+
+	@if $media == medium {
+		@media only screen and (min-width: $break-small + 1) and (max-width: $break-medium) { @content; }
+	}
+
+	@if $media == large {
+		@media only screen and (min-width: $break-medium + 1) and (max-width: $break-large) { @content; }
+	}
+
+	@else if $media == xlarge {
+		@media only screen and (min-width: $break-large + 1) and (max-width: $break-xlarge) { @content; }
+	}
+
+	@else if $media == max {
+		@media only screen and (min-width: 1650px) { @content; }
+	}
+}
+
+
+/*
+	RESPOND-THROUGH
+		Media query will respond from viewport 0 to the specified size
+*/
+@mixin respond-through( $media )
+{
+	@if $media == xsmall {
+		@media only screen and (max-width: $break-xsmall) { @content; }
+	}
+
+	@if $media == small {
+		@media only screen and (max-width: $break-small) { @content; }
+	}
+
+	@if $media == medium {
+		@media only screen and (max-width: $break-medium) { @content; }
+	}
+
+	// test size for job details with sidebar |  Overview and Swaps
+	@if $media == large {
+		@media only screen and (max-width: $break-large) { @content; }
+	}
+
+	@else if $media == xlarge {
+		@media only screen and (max-width: $break-xlarge) { @content; }
+	}
+}

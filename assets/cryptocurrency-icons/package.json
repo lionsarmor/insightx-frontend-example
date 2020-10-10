@@ -1,0 +1,90 @@
+{
+  "_from": "cryptocurrency-icons",
+  "_id": "cryptocurrency-icons@0.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-eYjFwxQZqyghKKOMjv3Vg55yfvgqcwmo1lTsXkkIPIjKvXKm01VevOj4aXhT8TwrrMunD0+TzZaqaMGWrKfOJA==",
+  "_location": "/cryptocurrency-icons",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cryptocurrency-icons",
+    "name": "cryptocurrency-icons",
+    "escapedName": "cryptocurrency-icons",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cryptocurrency-icons/-/cryptocurrency-icons-0.3.0.tgz",
+  "_shasum": "2318aa19e68420b132ce7fae0381b775df3f669b",
+  "_spec": "cryptocurrency-icons",
+  "_where": "/home/kid/pinkpanther",
+  "author": {
+    "name": "Christopher Downer",
+    "url": "https://github.com/cjdowner"
+  },
+  "bugs": {
+    "url": "https://github.com/atomiclabs/cryptocurrency-icons/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A set of icons for all the main cryptocurrencies and altcoins, in a range of styles and sizes",
+  "devDependencies": {
+    "alpha-sort": "^2.0.1",
+    "coinlist": "^3.0.0",
+    "husky": "^1.0.0-rc.13",
+    "xo": "^0.22.0"
+  },
+  "files": [
+    "32",
+    "32@2x",
+    "128",
+    "svg"
+  ],
+  "homepage": "http://cryptoicons.co",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run manifest"
+    }
+  },
+  "keywords": [
+    "cryptocurrency",
+    "icons",
+    "icon",
+    "crypto",
+    "currency",
+    "cryptocurrencies",
+    "currencies",
+    "symbols",
+    "svg",
+    "png",
+    "vector",
+    "color",
+    "coin",
+    "bitcoin",
+    "ethereum",
+    "flat-icons",
+    "altcoin",
+    "altcoins",
+    "icon-pack",
+    "icon-set",
+    "erc20-tokens",
+    "erc20",
+    "erc721"
+  ],
+  "license": "CC0-1.0",
+  "name": "cryptocurrency-icons",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atomiclabs/cryptocurrency-icons.git"
+  },
+  "scripts": {
+    "manifest": "node scripts/manifest.js",
+    "test": "xo"
+  },
+  "version": "0.3.0"
+}

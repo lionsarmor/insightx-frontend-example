@@ -1,0 +1,646 @@
+.item {
+    /* We center the contents of these items. You can also do this with flexbox too! */
+    display: grid;
+    align-items: start;
+    background: rgba(16, 30, 223, 0);
+}
+.item-1 {
+    /* We center the contents of these items. You can also do this with flexbox too! */
+    display: grid;
+    justify-content: left;
+    background: rgba(223, 116, 16, 0);
+}
+/* ACCOUNT PAGE */
+
+    /* Each item in our grid will contain numbers */
+@media (min-width: 1750px) {
+    .containerACCOUNT {
+      margin-top:75px;
+      display: grid;
+      grid-gap: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 20px;
+      /*border: 10px solid rgb(0, 0, 0);*/
+      height: 47rem;
+      grid-template-columns: repeat(8, minmax(150px, 1fr));
+      grid-template-areas: 
+      "token token token recent recent status status status"
+      "exchanges exchanges exchanges csv csv settings settings settings"
+      "wallet wallet wallet wallet wallet settings settings settings"
+    }
+}
+@media (max-width: 1750px) {
+    .containerACCOUNT {
+      margin-top:75px;
+      display: grid;
+      grid-gap: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 20px;
+      /*border: 10px solid rgb(0, 0, 0);*/
+      height: 47rem;
+      grid-template-columns: repeat(8, minmax(150px, 1fr));
+      grid-template-areas: 
+    "token token token token recent recent recent recent"
+    "status status status status exchanges exchanges exchanges exchanges"
+    "csv csv csv csv wallet wallet wallet wallet "
+    "settings settings settings settings settings settings settings settings"
+    "settings settings settings settings settings settings settings settings"
+    }
+}
+@media (max-width: 1200px) {
+    .containerACCOUNT {
+      margin-top:75px;
+      display: grid;
+      grid-gap: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 20px;
+      /*border: 10px solid rgb(0, 0, 0);*/
+      height: 47rem;
+      grid-template-columns: repeat(4, minmax(150px, 1fr));
+      grid-template-areas: 
+    "token token token token" 
+    "recent recent recent recent"
+    "status status status status" 
+    "exchanges exchanges exchanges exchanges"
+    "csv csv csv csv"
+    "wallet wallet wallet wallet"
+    "settings settings settings settings"
+    "settings settings settings settings"
+    "settings settings settings settings"
+    "settings settings settings settings"
+    }
+}
+    .accountItem1 {
+        /*TOKEN*/
+        grid-area: token;
+    }
+    .accountItem2 {
+        /*EXCHANGES*/
+        grid-area: exchanges;
+    }
+    .accountItem3 {
+        /*PAYMENT*/
+        grid-area: status;
+    }
+    .accountItem4 {
+        /*UPLOADS*/
+        grid-area: recent;
+    }
+    .accountItem5 {
+        /*CSV*/
+        grid-area: csv;
+    }
+    .accountItem6 {
+        /*wallet*/
+        grid-area: wallet;
+    }
+    .accountItem7 {
+        /*settings*/
+        grid-area: settings;
+    };
+    @media (max-height: 900px) {
+        .containerACCOUNT {
+            margin-bottom:110px;
+      }
+    }
+
+/* ********************************************************** */
+
+
+/* TRANSACTIONS PAGE */
+
+    /* Each item in our grid will contain numbers */
+
+        .containerTRANSACTIONS {
+          margin-top:75px;
+          display: grid;
+          padding-left: 2%;
+          padding-right: 1%;
+          border: 0px solid rgb(255, 0, 0);
+          height: 47rem;
+          grid-template-columns: repeat(8, minmax(220px, 1fr));
+          grid-template-rows: repeat(1, 1fr);        }
+        .transactionsItem1 {
+            /*Transactions history table*/
+            grid-column: 1 / -1;
+        }
+
+      /*  @media (max-height: 900px) {
+            .containerACCOUNT {
+                margin-bottom:110px;
+          }
+        }*/
+    
+    /* ********************************************************** */
+
+
+/* COINS PAGE */
+
+    /* Each item in our grid will contain numbers */
+@media (min-width: 1750px) {
+    .containerCOINS {
+      margin-top:85px;
+      display: grid;
+      grid-gap: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 20px;
+      /*border: 10px solid rgb(0, 0, 0);*/
+      grid-template-columns: repeat(8, minmax(150px, 1fr));
+      grid-auto-rows: minmax(auto, auto);
+      grid-template-areas: 
+      "banner banner miniExchange miniExchange donut donut donut donut"
+      "assets assets assets assets allocation allocation radials radials"
+    }
+}
+@media (max-width: 1750px) {
+    .containerCOINS {
+      margin-top:85px;
+      display: grid;
+      grid-gap: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 20px;
+      /*border: 10px solid rgb(0, 0, 0);*/
+      grid-template-columns: repeat(4, minmax(150px, 1fr));
+      grid-auto-rows: minmax(auto, auto);
+      grid-template-areas: 
+      "banner banner miniExchange miniExchange"
+      "donut donut donut donut"
+      "assets assets assets assets"
+      "allocation allocation radials radials"
+    }
+}
+
+@media (max-width: 1000px) {
+    .containerCOINS {
+      margin-top:85px;
+      display: grid;
+      grid-gap: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 20px;
+      /*border: 10px solid rgb(0, 0, 0);*/
+      grid-template-columns: repeat(4, minmax(150px, 1fr));
+      grid-auto-rows: minmax(auto, auto);
+      grid-template-areas: 
+      "banner banner banner banner"
+      "miniExchange miniExchange miniExchange miniExchange"
+      "donut donut donut donut"
+      "assets assets assets assets"
+      "allocation allocation allocation allocation"
+      "radials radials radials radials"
+    }
+}
+    .COINSItem1 {
+        grid-area: banner;
+    }
+    .COINSItem2 {
+        grid-area: miniExchange;
+    }
+    .COINSItem3 {
+        grid-area: donut;
+        min-height: 350px;
+    }
+    .COINSItem4 {
+        grid-area: assets;
+    }
+    .COINSItem5 {
+        grid-area: allocation;
+    }
+    .COINSItem6 {
+        grid-area: radials;
+    }
+    
+    @media (max-height: 900px) {
+        .containerCOINS {
+            margin-bottom:110px;
+      }
+    }
+ 
+/* COMPONENTS */
+
+/* ************** BANNER ************* */
+.itemBanner {
+    display: grid;
+    background: rgba(185, 13, 13, 0);
+    height: 25px;
+}
+
+.containerBANNER {
+    font-size: 14px;
+    display: grid;
+    grid-gap: 10px;
+    grid-row-gap: 10px;
+    height: 200px;
+    ;
+    border: 0px solid rgb(4, 255, 66);
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    grid-template-areas:
+        "title title title title"
+        "amountTitle amountTitle amountValue amountValue"
+        "usdTitle usdTitle usdValue usdValue"
+        "btcTitle btcTitle btcValue btcValue"
+        "changeTitle changeTitle changeValue changeValue"
+        "allocationTitle allocationTitle allocationValue allocationValue"
+}
+
+.title {
+    /*TOKEN*/
+    grid-area: title;
+    align-items: center;
+    justify-content: center;
+    margin-left: -25%;
+}
+
+.amountTitle {
+    /*TOKEN*/
+    grid-area: amountTitle;
+    align-items: center;
+    justify-content: left;
+}
+
+.amountValue {
+    /*TOKEN*/
+    grid-area: amountValue;
+    align-items: center;
+    justify-content: left;
+}
+
+.usdTitle {
+    /*TOKEN*/
+    grid-area: usdTitle;
+    align-items: center;
+    justify-content: left;
+}
+
+.usdValue {
+    /*TOKEN*/
+    grid-area: usdValue;
+    align-items: center;
+    justify-content: left;
+}
+
+.btcTitle {
+    /*TOKEN*/
+    grid-area: btcTitle;
+    align-items: center;
+    justify-content: left;
+}
+
+.btcValue {
+    /*TOKEN*/
+    grid-area: btcValue;
+    align-items: center;
+    justify-content: left;
+}
+
+.changeTitle {
+    /*TOKEN*/
+    grid-area: changeTitle;
+    align-items: center;
+    justify-content: left;
+}
+
+.changeValue {
+    /*TOKEN*/
+    grid-area: changeValue;
+    align-items: center;
+    justify-content: left;
+}
+
+.allocationTitle {
+    /*TOKEN*/
+    grid-area: allocationTitle;
+    align-items: center;
+    justify-content: left;
+}
+
+.allocationValue {
+    /*TOKEN*/
+    grid-area: allocationValue;
+    align-items: center;
+    justify-content: left;
+}
+
+.valColor {
+    color: #65cdfa;
+    padding-top: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.valColorC {
+    color: #d73333;
+    padding-top: 2px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.valColorD {
+    color: #1b9e26;
+    padding-top: 2px;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* ************** MINI TABLES ************* */
+    .mini-tables {
+        border: 0px solid rgb••••••••••••(218, 11, 11);
+        display: grid;
+        grid-row-gap: 5px;
+        grid-template-columns: repeat(8, minmax(50px, 1fr));
+        grid-template-areas:
+              "exchangeButton exchangeButton walletButton walletButton . . . ."
+              "miniTable miniTable miniTable miniTable miniTable miniTable miniTable miniTable"
+  }
+      .exchangeButton {
+          /*TOKEN*/
+          grid-area: exchangeButton;
+          width: 90px;
+  }
+      .walletButton {
+          /*TOKEN*/
+          grid-area: walletButton;
+          width: 90px;
+  }
+      .miniTable {
+          /*TOKEN*/
+          grid-area: miniTable;
+  }
+
+/* ************** RADIAL TABLE ************* */
+.radial-item {
+    border: 0px solid rgb(218, 11, 11);
+    white-space: nowrap;
+    height: 27.8rem;
+    display: grid;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+    grid-template-columns: repeat(8, minmax(50px, 1fr));
+    grid-template-areas:
+    "coin-price coin-price coin-price coin-price coin-price coin-price coin-price coin-price"
+    "status status status status radial-chart radial-chart radial-chart radial-chart"
+    ". . . . radial-chart radial-chart radial-chart radial-chart"
+    "portfolioTitle portfolioTitle  portfolioValue portfolioValue radial-chart radial-chart radial-chart radial-chart"
+    "allocationTitle allocationTitle allocationValue allocationValue radial-chart radial-chart radial-chart radial-chart"
+    "targetedTitle targetedTitle targetedValue targetedValue radial-chart radial-chart radial-chart radial-chart"
+    "fromTargetTitle fromTargetTitle fromTargetValue fromTargetValue radial-chart radial-chart radial-chart radial-chart"
+    "action action actionValue actionValue radial-chart radial-chart radial-chart radial-chart"
+    ". . . . radial-chart radial-chart radial-chart radial-chart"
+}
+  .coin-price {
+      /*TOKEN*/
+      grid-area: coin-price;
+      white-space: nowrap;
+}
+  .status {
+      /*TOKEN*/
+      grid-area: status;
+
+}
+  .portfolioTitle {
+      /*TOKEN*/
+      grid-area: portfolioTitle;
+}
+    .portfolioValue {
+      /*TOKEN*/
+      grid-area: portfolioValue;
+
+}
+    .allocationTitle {
+      /*TOKEN*/
+      grid-area: allocationTitle;
+}
+      .allocationValue {
+      /*TOKEN*/
+      grid-area: allocationValue;
+}
+      .targetedTitle {
+      /*TOKEN*/
+      grid-area: targetedTitle;
+}
+      .targetedValue {
+      /*TOKEN*/
+      grid-area: targetedValue;
+}
+    .fromTargetTitle {
+      /*TOKEN*/
+      grid-area: fromTargetTitle;
+}
+      .fromTargetValue {
+      /*TOKEN*/
+      grid-area: fromTargetValue;
+}
+      .action {
+      /*TOKEN*/
+      grid-area: action;
+}
+      .actionValue {
+      /*TOKEN*/
+      grid-area: actionValue;
+}
+      .exchangeEmblem {
+      /*TOKEN*/
+      position: relative;
+      top:-40%;
+      left:20%;
+}
+      .radial-chart {
+      /*TOKEN*/
+      grid-area: radial-chart;
+}
+
+/* ********************************************************** */
+/* ANALYSIS PAGE */
+
+    /* Each item in our grid will contain numbers */
+    @media (min-width: 1750px) {
+        .analysisContainer {
+          margin-top:55px;
+          display: grid;
+          grid-gap: 10px;
+          padding-left: 30px;
+          padding-right: 30px;
+          /*border: 10px solid rgb(0, 0, 0);*/
+          grid-template-columns: repeat(8, minmax(150px, 1fr));
+          grid-template-areas: 
+          "tradingViewContainer tradingViewContainer tradingViewContainer tradingViewContainer tradingViewContainer watchListContainer watchListContainer watchListContainer"
+          "tradeHistoryContainer tradeHistoryContainer tradeHistoryContainer tradeHistoryContainer tradeHistoryContainer tradeHistoryContainer tradeHistoryContainer tradeHistoryContainer"
+        }
+    }
+
+    @media (max-width: 1750px) {
+        .analysisContainer{
+          margin-top:85px;
+          display: grid;
+          grid-gap: 10px;
+          padding-left: 30px;
+          padding-right: 30px;
+          padding-bottom: 20px;
+          grid-auto-rows: minmax(auto, auto);
+          grid-template-columns: repeat(4, minmax(150px, 1fr));
+          grid-auto-rows: minmax(auto, auto);
+          grid-template-areas: 
+          "tradingViewContainer tradingViewContainer tradingViewContainer tradingViewContainer"
+          "watchListContainer watchListContainer watchListContainer watchListContainer"
+          "tradeHistoryContainer tradeHistoryContainer tradeHistoryContainer tradeHistoryContainer"
+        }
+    }
+        .tradingViewContainer {
+            grid-area: tradingViewContainer;
+        }
+        .watchListContainer {
+            grid-area: watchListContainer;
+        }
+        .tradeHistoryContainer {
+            grid-area: tradeHistoryContainer;
+        }
+        @media (max-height: 900px) {
+            .analysisContainer {
+                margin-bottom:150px;
+          }
+        }
+
+        /* ********************************************************** */
+/* PORTFOLIO PAGE */
+    @media (min-width: 1750px) {
+        .portfolioContainer {
+          margin-top:80px;
+          display: grid;
+          grid-gap: 10px;
+          padding-left: 30px;
+          padding-right: 30px;
+          /*border: 10px solid rgb(0, 0, 0);*/
+          grid-template-columns: repeat(9, minmax(150px, 1fr));
+          grid-template-areas: 
+          "portfolioChartComponent portfolioChartComponent portfolioChartComponent portfolioChartComponent portfolioChartComponent twentyFourComponent twentyFourComponent twentyFourComponent twentyFourComponent"
+          "totalsComponent totalsComponent totalsComponent performersComponent performersComponent performersComponent assetsComponent assetsComponent assetsComponent"
+          "totalsComponent totalsComponent totalsComponent performersComponent performersComponent performersComponent assetsComponent assetsComponent assetsComponent"
+        }
+        .portfolioChartComponent {
+            grid-area: portfolioChartComponent;
+            max-height: 580px;
+        }
+        .twentyFourComponent {
+            grid-area: twentyFourComponent;
+            max-height: 455px;
+
+        }
+        .totalsComponent {
+            grid-area: totalsComponent;
+        }
+        .performersComponent {
+            grid-area: performersComponent;
+        }
+        .assetsComponent {
+            margin-top:-11vh;
+            grid-area: assetsComponent;
+        }
+        @media (max-height: 900px) {
+            .portfolioContainer {
+                margin-bottom:150px;
+          }
+    }
+       
+}
+
+@media (max-width: 1750px) {
+    .portfolioContainer {
+      margin-top:80px;
+      display: grid;
+      grid-gap: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+      /*border: 10px solid rgb(0, 0, 0);*/
+      grid-template-columns: repeat(8, minmax(150px, 1fr));
+      grid-template-areas: 
+      "portfolioChartComponent portfolioChartComponent portfolioChartComponent portfolioChartComponent portfolioChartComponent portfolioChartComponent portfolioChartComponent portfolioChartComponent"
+      "twentyFourComponent twentyFourComponent twentyFourComponent twentyFourComponent assetsComponent assetsComponent assetsComponent assetsComponent"
+      "performersComponent performersComponent performersComponent performersComponent totalsComponent totalsComponent totalsComponent totalsComponent"
+    }
+    .portfolioChartComponent {
+        grid-area: portfolioChartComponent;
+        max-height: 580px;
+    }
+    .twentyFourComponent {
+        grid-area: twentyFourComponent;
+    }
+    .totalsComponent {
+        grid-area: totalsComponent;
+    }
+    .performersComponent {
+        grid-area: performersComponent;
+    }
+    .assetsComponent {
+        grid-area: assetsComponent;
+        margin-top:4.7rem;
+    }
+    .wrapper {
+        margin-right: 5rem;
+        margin-left: 7rem;
+        }
+    @media (max-height: 900px) {
+        .portfolioContainer {
+            margin-bottom:150px;
+      }
+}
+}
+
+
+@media (max-width: 1300px) {
+    @media (max-height: 900px) {
+        .portfolioContainer {
+            margin-top:80px;
+            display: grid;
+            grid-gap: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            /*border: 10px solid rgb(0, 0, 0);*/
+            grid-template-columns: repeat(4, minmax(150px, 1fr));
+            grid-template-areas: 
+            "portfolioChartComponent portfolioChartComponent portfolioChartComponent portfolioChartComponent"
+            "twentyFourComponent twentyFourComponent twentyFourComponent twentyFourComponent"
+            "performersComponent performersComponent performersComponent performersComponent"
+            "assetsComponent assetsComponent assetsComponent assetsComponent"
+            "totalsComponent totalsComponent totalsComponent totalsComponent"
+          }
+          .portfolioChartComponent {
+              grid-area: portfolioChartComponent;
+              max-height: 580px;
+          }
+          .twentyFourComponent {
+              grid-area: twentyFourComponent;
+          }
+          .totalsComponent {
+              grid-area: totalsComponent;
+              margin-right:auto;
+          }
+          .performersComponent {
+              grid-area: performersComponent;
+          }
+          .assetsComponent {
+              grid-area: assetsComponent;
+              margin-top:4.7rem;
+              margin-right:auto;
+              margin-left:auto;
+          }
+          .wrapper {
+              margin-right: 5rem;
+              margin-left: 7rem;
+              }
+              @media (max-height: 900px) {
+                .portfolioContainer {
+                    margin-bottom:150px;
+              }
+              @media (max-width: 800px) {
+                .portfolioContainer {
+                    margin-top:150px;
+              }
+            }
+}
+}}
+

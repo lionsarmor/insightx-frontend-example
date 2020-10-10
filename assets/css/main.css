@@ -1,0 +1,1374 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Anton|Open+Sans+Condensed:300|Righteous|Shrikhand');
+a{
+  color:white;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #65cdfa;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #65cdfa;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: white;
+  text-align: center;
+}
+
+.blue {
+  color: rgb(204, 223, 255) !important;
+  font-family: 'Righteous', cursive;
+  font-size: 20px;
+  position: relative;
+}
+
+body{
+  background-color: black;
+  color:white;
+  overflow-x: hidden;
+}
+.page-enter-active, .page-leave-active {
+  transition: opacity .3s;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+}
+.bgAll {
+  background-color: black;
+}
+
+.nav-pad {
+  margin-bottom: 35px;
+}
+
+.timeDate{
+    width: 100%;
+    height:45px;
+    border-width: 0px;
+    border-radius: 5px;
+    background-color:rgb(255, 255, 255) !important;
+}
+.title{
+  font-size: 14px !important;
+  font-weight: bold;
+}
+.title2{
+  font-size: 20px !important;
+}
+.table-labels{
+  font-size: 12px !important;
+  font-weight: bold;
+  color: white !important;
+}
+.tabletext{
+  font-size: 11px !important;
+  color: white;
+}
+.buttontext{
+    font-size: 14px !important;
+}
+.bordertable{
+  border:red;
+  border-style: solid;
+  border-width: 5px;
+}
+button {
+  outline: none !important;
+  cursor: pointer !important;
+}
+.apexcharts-tooltip {
+  font-size: 17px !important;
+  font-weight: bold;
+  background: #ff000000 !important;
+  color: rgba(255, 255, 255, 0) !important;
+  border: none !important;
+  border-bottom: black !important;
+  width: 100% !important;
+  border-radius: 0px !important;
+  outline: none !important;
+  -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	 box-shadow: none;
+}
+.apexcharts-xaxistooltip {
+  background: #000000c9;
+  color: #fff;
+  border: none;
+}
+
+.apexcharts-yaxistooltip {
+  background: #096ff5;
+  color: #fff;
+  border: none;
+}
+
+.btn-fil{
+    color: white !important;
+    background-color: black !important; 
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 25px;
+}
+.btn-fil-blue-filled {
+  color: white !important;
+  background-color: #047ea4 !important;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #047ea4;
+  border-radius: 25px;
+  height: 37px;
+  position: relative;
+  top: 3px;
+  cursor: pointer;
+}
+
+.btn-fil-blue {
+  color: white !important;
+  background-color: #000000 !important;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #047ea4;
+  border-radius: 25px;
+  height: 37px;
+  position: relative;
+  top: 3px;
+  cursor: pointer;
+}
+
+.btn-fil-yellow {
+  color: white !important;
+  background-color: #000000 !important;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #a3972d;
+  border-radius: 25px;
+  height: 37px;
+  position: relative;
+  top: 3px;
+  cursor: pointer;
+}
+
+.btn-fil-red {
+  color: white !important;
+  background-color: #000000 !important;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #a41704;
+  border-radius: 25px;
+  height: 37px;
+  position: relative;
+  top: 3px;
+  cursor: pointer;
+}
+
+.btn-fil-white2 {
+  color: rgb(0, 0, 0) !important;
+  font-size: 10px !important;
+  font-weight: bold;
+  background-color: #ffffff !important;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ffffff;
+  border-radius: 25px;
+  height: 27px;
+  position: relative;
+  top: 3px;
+  cursor: pointer;
+}
+
+.btn-fil-white {
+  color: white !important;
+  background-color: #000000 !important;
+  font-size: 10px !important;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ffffff;
+  border-radius: 25px;
+  height: 27px;
+  position: relative;
+  top: 3px;
+  cursor: pointer;
+}
+
+
+.btn-fil-blue2 {
+  color: white !important;
+  background-color: #000000 !important;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #047ea4;
+  border-radius: 25px;
+  height: 37px;
+  position: relative;
+  top: 3px;
+  cursor: pointer;
+}
+
+.btn-fil-grey {
+  color: white !important;
+  background-color: #000000 !important;
+  border-style: solid;
+  border-width: 2px;
+  border-color: grey;
+  border-radius: 25px;
+  height: 37px;
+  position: relative;
+  top: 3px;
+  cursor: pointer;
+}
+.nowrap{
+  white-space: nowrap;
+}
+
+
+.head-dark2{
+  background: black;
+  border: black;
+}
+* {
+    outline-style: none
+}
+.black{
+  color:black;
+}
+[v-cloak] > * { display:none }
+[v-cloak]::before { content: "loading…" }
+.table-dark2:nth-child(odd){
+  background-color: rgb(27, 26, 26) !important;
+  border: 1.5px solid rgba(54, 53, 53, 0.815);
+  border-right: black;
+  border-left: black;
+}
+.table-dark2:nth-child(even){
+  background-color: rgb(10, 10, 10) !important;
+  border: 1.5px solid rgba(54, 53, 53, 0.815);
+  border-right: black;
+  border-left: black;
+}
+.table-dark2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+} 
+.table-dark3{
+  background: linear-gradient(to right, rgba(0,208,220, 0.229) , black);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+.table-wrapper
+{
+    height:350px;
+    width:100%;
+    position: relative;
+    overflow: auto; 
+    overflow-x: hidden; 
+}
+.table-pad{
+  margin-top: -20px;
+ padding-right:1%;
+}
+.page-item.disabled .page-link {
+    color: white;
+  background:black 
+}
+.loadover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page-link {
+  color: white;
+  background:black 
+}
+
+.page-item.active .page-link{
+  background-color: white;
+  color: black;
+  border-color:  white
+}
+.bg-black{
+    background: black;
+    border: black;
+}
+.thick {
+     font-weight: 900;
+}
+.vdatetime-time-picker__item--selected {
+  color:  #7ed5fc !important;
+  font-size: 32px;
+}
+
+
+.vdatetime-popup {
+  box-sizing: border-box;
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 340px;
+  max-width: calc(100% - 30px);
+  box-shadow: 0 1px 3px 0 rgba(250, 11, 11, 0.3);
+  color: rgb(255, 255, 255) !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.18;
+  background: rgb(0, 0, 0)  !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.vdatetime-popup__header {
+  padding: 18px 30px;
+  background: #000000 !important;
+  color: rgb(255, 255, 255) !important;
+  font-size: 32px;
+}
+
+.vdatetime-popup__title {
+  margin-bottom: 8px;
+  font-size: 21px;
+  font-weight: 300;
+}
+
+.vdatetime-popup__year {
+  font-weight: 300;
+  font-size: 14px;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity .3s;
+
+}
+
+.vdatetime-popup__actions__button {
+  display: inline-block;
+  border: none;
+  padding: 10px 20px;
+  background: transparent;
+  font-size: 16px;
+  color: #7ed5fc !important;
+  cursor: pointer;
+  transition: color .3s;
+}
+
+.vdatetime-year-picker__item--selected {
+  color:#7ed5fc !important;
+  font-size: 32px;
+}
+.vdatetime-calendar__month__day:hover > span > span {
+  background: #00a8cd !important;
+}
+.vdatetime-calendar__month__day--selected > span > span {
+  background: #00a8cd !important;
+}
+   /* Dropdown Button */
+   .dropbtnTicker {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    height: 27px;
+    top:5px;
+    left:-35%;
+    background: transparent;
+}
+
+/* TICKER */
+.dropdownTicker {
+  position: relative;
+  display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-contentTicker {
+  display: none;
+  position: absolute;
+  font-weight: 200;
+  min-width: 50px;
+  height: 50;
+  z-index: 100;
+  margin-top: -8px;
+}
+/* Links inside the dropdown */
+.dropdown-contentTicker a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-left: 10%;
+  margin-right: -30%;
+  background-color: black;
+}
+
+.dropdown-contentTicker a:hover {
+  background-color: #f1f1f1 !important;
+  color: black !important;
+}
+
+/* Show the dropdown menu on hover */
+.dropdownTicker:hover .dropdown-contentTicker {
+  display: block;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    font-weight: 200;
+    width: 90px;
+    height: 93px;
+    z-index:2;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    background-color: black;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1 !important;
+    color: black !important;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+   /* Dropdown Button */
+   .dropbtn {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    height: 27px;
+    top:5px;
+    background: transparent;
+}
+
+.paginationShift{
+  margin-top:-60px;
+}
+.paginationShift2{
+  position: relative;
+  top:300px;
+  margin-bottom:-60px !important;
+}
+/*************trade history small********************************/
+table.my-table-scroll,
+table.my-table-scroll>tbody,
+table.my-table-scroll>tfoot,
+table.my-table-scroll>tbody>tr,
+table.my-table-scroll>thead>tr {
+  width: 100.0%;
+  display: block;
+  border-top: #000000;
+  border-bottom: #000000;
+
+}
+table.my-table-scroll>thead{
+  width: 100%;
+  display: table;
+}
+table.my-table-scroll>tbody,
+table.my-table-scroll>tfoot {
+  border-top: #000000;
+  border-bottom: #000000;
+  display: block;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+table.my-table-scroll>thead,
+table.my-table-scroll>tfoot {
+  border-bottom: #000000;
+  border-top: #000000;
+  float: left;
+  overflow-y: hidden;
+
+}
+table.my-table-scroll>tbody {
+  border-bottom: #000000;
+  border-top: #000000;
+  height: 160px;
+}
+
+table.my-table-scroll>thead>tr>th,
+table.my-table-scroll>thead>tr>td,
+table.my-table-scroll>tbody>tr>th,
+table.my-table-scroll>tbody>tr>td,
+table.my-table-scroll>tfoot>tr>th,
+table.my-table-scroll>tfoot>tr>td {
+  display: inline-block;
+  border-bottom: #000000;
+  width: 7.1% !important;
+  border-top: #000000;
+
+}
+
+/*************transactioins********************************/
+table.my-table-scroll2,
+table.my-table-scroll2>tbody,
+table.my-table-scroll2>tfoot,
+table.my-table-scroll2>tbody>tr,
+table.my-table-scroll2>thead>tr {
+  width: 100%;
+  display: block;
+  border-top: #000000;
+  border-bottom: #000000;
+}
+table.my-table-scroll2>thead{
+  width: 100%;
+  display: table;
+}
+table.my-table-scroll2>tbody,
+table.my-table-scroll2>tfoot {
+  border-top: #000000;
+  border-bottom: #000000;
+  display: block;
+  width: 100%;
+  overflow-y: auto;
+}
+
+table.my-table-scroll2>thead,
+table.my-table-scroll2>tfoot {
+  overflow-y: hidden;
+  border-bottom: #000000;
+  border-top: #000000;
+  height: auto;
+}
+table.my-table-scroll2>tbody {
+  border-bottom: #000000;
+  border-top: #000000;
+  height: 650px;
+}
+table.my-table-scroll2>thead>tr>th,
+table.my-table-scroll2>thead>tr>td,
+table.my-table-scroll2>tbody>tr>th,
+table.my-table-scroll2>tbody>tr>td,
+table.my-table-scroll2>tfoot>tr>th,
+table.my-table-scroll2>tfoot>tr>td {
+  display: inline-block;
+  border-bottom: #000000;
+  min-width: 5.8%;
+  border-top: #000000;
+
+}
+/*************trade history big********************************/
+table.my-table-scroll3,
+table.my-table-scroll3>tbody,
+table.my-table-scroll3>tfoot,
+table.my-table-scroll3>tbody>tr,
+table.my-table-scroll3>thead>tr {
+  width: 100%;
+  display: block;
+  border-top: #000000;
+  border-bottom: #000000;
+}
+table.my-table-scroll3>thead{
+  width: 100%;
+  display: table;
+}
+table.my-table-scroll3>tbody,
+table.my-table-scroll3>tfoot {
+  border-top: #000000;
+  border-bottom: #000000;
+  display: block;
+  width: 100%;
+  overflow-y: auto;
+
+}
+
+table.my-table-scroll3>thead,
+table.my-table-scroll3>tfoot {
+  border-bottom: #000000;
+  border-top: #000000;
+  float: left;
+  overflow-y: hidden;
+}
+table.my-table-scroll3>tbody {
+  border-bottom: #000000;
+  border-top: #000000;
+  height: 638px;
+  margin-bottom:-360px;
+}
+table.my-table-scroll3>thead>tr>th,
+table.my-table-scroll3>thead>tr>td,
+table.my-table-scroll3>tbody>tr>th,
+table.my-table-scroll3>tbody>tr>td,
+table.my-table-scroll3>tfoot>tr>th,
+table.my-table-scroll3>tfoot>tr>td {
+  display: inline-block;
+  border-bottom: #000000;
+  width: 9% !important;
+  border-top: #000000;
+
+}
+
+/*************24 hour asset table********************************/
+table.my-table-scroll4,
+table.my-table-scroll4>tbody,
+table.my-table-scroll4>tfoot,
+table.my-table-scroll4>tbody>tr,
+table.my-table-scroll4>thead>tr {
+  width: 100%;
+  display: block;
+  border-top: #000000;
+  border-bottom: #000000;
+}
+table.my-table-scroll4>thead{
+  width: 100%;
+  display: table;
+}
+
+table.my-table-scroll4>tbody,
+table.my-table-scroll4>tfoot {
+  border-top: #000000;
+  border-bottom: #000000;
+  display: block;
+  overflow-y: auto;
+  width: 100%;
+}
+
+table.my-table-scroll4>thead,
+table.my-table-scroll4>tfoot {
+  border-bottom: #000000;
+  border-top: #000000;
+  overflow-y: hidden;
+}
+table.my-table-scroll4>tbody {
+  border-bottom: #000000;
+  border-top: #000000;
+  height: 388px;
+  margin-bottom:30px;
+}
+table.my-table-scroll4>thead>tr>th,
+table.my-table-scroll4>thead>tr>td,
+table.my-table-scroll4>tbody>tr>th,
+table.my-table-scroll4>tbody>tr>td,
+table.my-table-scroll4>tfoot>tr>th,
+table.my-table-scroll4>tfoot>tr>td {
+  display:inline-block;
+  border-bottom: #000000;
+  border-top: #000000;
+  white-space: nowrap;
+  width:19%;
+}
+/*************watchlist table********************************/
+
+
+table.my-table-scroll5,
+table.my-table-scroll5>tbody,
+table.my-table-scroll5>tfoot,
+table.my-table-scroll5>tbody>tr,
+table.my-table-scroll5>thead>tr {
+  width: 100%;
+  display: block;
+  border-top: #000000;
+  border-bottom: #000000;
+}
+table.my-table-scroll5>thead{
+  width: 100%;
+  display: table;
+}
+table.my-table-scroll5>tbody,
+table.my-table-scroll5>tfoot {
+  border-top: #000000;
+  border-bottom: #000000;
+  display: block;
+  width: 103%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+table.my-table-scroll5>thead,
+table.my-table-scroll5>tfoot {
+  border-bottom: #000000;
+  border-top: #000000;
+  overflow-y: hidden;
+  width: 100%;
+}
+table.my-table-scroll5>tbody {
+  border-bottom: #000000;
+  border-top: #000000;
+  height: 425px;
+}
+table.my-table-scroll5>thead>tr>th,
+table.my-table-scroll5>thead>tr>td,
+table.my-table-scroll5>tbody>tr>th,
+table.my-table-scroll5>tbody>tr>td,
+table.my-table-scroll5>tfoot>tr>th,
+table.my-table-scroll5>tfoot>tr>td {
+  display: inline-block;
+  border-bottom: #000000;
+  width: 18.7%;
+  border-top: #000000;
+}
+/*************exchange table********************************/
+table.my-table-scrollExchange,
+table.my-table-scrollExchange>thead,
+table.my-table-scrollExchange>tbody,
+table.my-table-scrollExchange>tfoot,
+table.my-table-scrollExchange>tbody>tr,
+table.my-table-scrollExchange>thead>tr {
+  width: 100%;
+  display: block;
+  border-top: #000000;
+  border-bottom: #000000;
+}
+table.my-table-scrollExchange>thead,
+table.my-table-scrollExchange>tbody,
+table.my-table-scrollExchange>tfoot {
+  border-top: #000000;
+  border-bottom: #000000;
+  display: block;
+  width: 100%;
+  overflow-y: auto;
+}
+
+table.my-table-scrollExchange>thead,
+table.my-table-scrollExchange>tfoot {
+  border-bottom: #000000;
+  border-top: #000000;
+  overflow-y: hidden;
+  width: 100%;
+}
+table.my-table-scrollExchange>tbody {
+  border-bottom: #000000;
+  border-top: #000000;
+  height: 190px;
+}
+table.my-table-scrollExchange>thead>tr>th,
+table.my-table-scrollExchange>thead>tr>td,
+table.my-table-scrollExchange>tbody>tr>th,
+table.my-table-scrollExchange>tbody>tr>td,
+table.my-table-scrollExchange>tfoot>tr>th,
+table.my-table-scrollExchange>tfoot>tr>td {
+  display: inline-block;
+  border-bottom: #000000;
+  width: 20%;
+  border-top: #000000;
+}
+
+
+
+/*************trade table********************************/
+table.my-table-scroll6,
+table.my-table-scroll6>tbody,
+table.my-table-scroll6>tfoot,
+table.my-table-scroll6>tbody>tr,
+table.my-table-scroll6>thead>tr {
+  width: 100%;
+  display: block;
+  border-top: #000000;
+  border-bottom: #000000;
+}
+table.my-table-scroll>thead{
+  width: 100%;
+  display: table;
+}
+table.my-table-scroll6>tbody,
+table.my-table-scroll6>tfoot {
+  border-top: #000000;
+  border-bottom: #000000;
+  display: block;
+  width: 100%;
+  overflow-y: auto;
+}
+
+table.my-table-scroll6>thead,
+table.my-table-scroll6>tfoot {
+  border-bottom: #000000;
+  border-top: #000000;
+  overflow-y: hidden;
+  width: 100%;
+}
+table.my-table-scroll6>tbody {
+  border-bottom: #000000;
+  border-top: #000000;
+  height: 190px;
+}
+table.my-table-scroll6>thead>tr>th,
+table.my-table-scroll6>thead>tr>td,
+table.my-table-scroll6>tbody>tr>th,
+table.my-table-scroll6>tbody>tr>td,
+table.my-table-scroll6>tfoot>tr>th,
+table.my-table-scroll6>tfoot>tr>td {
+  display: inline-block;
+  border-bottom: #000000;
+  width: 20%;
+  border-top: #000000;
+}
+
+
+/*************mini exchange********************************/
+table.my-table-scrollMini,
+table.my-table-scrollMini>tbody,
+table.my-table-scrollMini>tfoot,
+table.my-table-scrollMini>tbody>tr,
+table.my-table-scrollMini>thead>tr {
+  width: 100%;
+  display: block;
+  border-top: #000000;
+  border-bottom: #000000;
+}
+table.my-table-scrollMini>thead{
+  width: 100%;
+  display: table;
+}
+table.my-table-scrollMini>tbody,
+table.my-table-scrollMini>tfoot {
+  border-top: #000000;
+  border-bottom: #000000;
+  display: block;
+  width: 100%;
+  overflow-y: auto;
+}
+
+table.my-table-scrollMini>thead,
+table.my-table-scrollMini>tfoot {
+  border-bottom: #000000;
+  border-top: #000000;
+  overflow-y: hidden;
+}
+table.my-table-scrollMini>tbody {
+  border-bottom: #000000;
+  border-top: #000000;
+  height: 125px;
+}
+table.my-table-scrollMini>thead>tr>th,
+table.my-table-scrollMini>thead>tr>td,
+table.my-table-scrollMini>tbody>tr>th,
+table.my-table-scrollMini>tbody>tr>td,
+table.my-table-scrollMini>tfoot>tr>th,
+table.my-table-scrollMini>tfoot>tr>td {
+  display: inline-block;
+  border-bottom: #000000;
+  width: 20%;
+  border-top: #000000;
+}
+
+
+/*************wallets table********************************/
+table.my-table-scroll8,
+table.my-table-scroll8>thead,
+table.my-table-scroll8>tbody,
+table.my-table-scroll8>tfoot,
+table.my-table-scroll8>tbody>tr,
+table.my-table-scroll8>thead>tr {
+  display: block;
+  border-top: #000000;
+  border-bottom: #000000;
+}
+
+table.my-table-scroll8>thead,
+table.my-table-scroll8>tbody,
+table.my-table-scroll8>tfoot {
+  border-top: #000000;
+  border-bottom: #000000;
+  display: block;
+  width: 100%;
+  overflow-y: auto;
+}
+
+table.my-table-scroll8>thead,
+table.my-table-scroll8>tfoot {
+  border-bottom: #000000;
+  border-top: #000000;
+  overflow-y: hidden;
+}
+table.my-table-scroll8>tbody {
+  border-bottom: #000000;
+  border-top: #000000;
+  height: 290px;
+}
+table.my-table-scroll8>thead>tr>th,
+table.my-table-scroll8>thead>tr>td,
+table.my-table-scroll8>tbody>tr>th,
+table.my-table-scroll8>tbody>tr>td,
+table.my-table-scroll8>tfoot>tr>th,
+table.my-table-scroll8>tfoot>tr>td {
+  display: inline-block;
+  border-bottom: #000000;
+  width: 16.6%;
+  white-space: nowrap;
+  border-top: #000000;
+}
+/*************color logo table**************************{**/
+table.my-table-scroll9,
+table.my-table-scroll9>tbody,
+table.my-table-scroll9>tfoot,
+table.my-table-scroll9>tbody>tr,
+table.my-table-scroll9>thead>tr {
+  display: block;
+  border-top: #000000;
+  border-bottom: #000000;
+}
+table.my-table-scroll9>thead{
+  width: 100%;
+  display: table;
+}
+table.my-table-scroll9>tbody,
+table.my-table-scroll9>tfoot {
+  border-top: #000000;
+  border-bottom: #000000;
+  display: block;
+  width: 100%;
+  overflow-y: auto;
+}
+
+table.my-table-scroll9>thead,
+table.my-table-scroll9>tfoot {
+  border-bottom: #000000;
+  border-top: #000000;
+  overflow-y: hidden;
+}
+table.my-table-scroll9>tbody {
+  border-bottom: #000000;
+  border-top: #000000;
+  height: 300px;
+}
+table.my-table-scroll9>thead>tr>th,
+table.my-table-scroll9>thead>tr>td,
+table.my-table-scroll9>tbody>tr>th,
+table.my-table-scroll9>tbody>tr>td,
+table.my-table-scroll9>tfoot>tr>th,
+table.my-table-scroll9>tfoot>tr>td {
+  display: inline-block;
+  border-bottom: #000000;
+  width: 20%;
+  white-space: nowrap;
+  border-top: #000000;
+}
+
+
+/*************mini exchange********************************/
+table.my-table-scroll7,
+table.my-table-scroll7>thead,
+table.my-table-scroll7>tbody,
+table.my-table-scroll7>tfoot,
+table.my-table-scroll7>tbody>tr,
+table.my-table-scroll7>thead>tr {
+  width: 100%;
+  display: block;
+  border-top: #000000;
+  border-bottom: #000000;
+}
+
+table.my-table-scroll7>thead,
+table.my-table-scroll7>tbody,
+table.my-table-scroll7>tfoot {
+  border-top: #000000;
+  border-bottom: #000000;
+  display: block;
+  width: 100%;
+  overflow-y: auto;
+}
+
+table.my-table-scroll7>thead,
+table.my-table-scroll7>tfoot {
+  border-bottom: #000000;
+  border-top: #000000;
+  overflow-y: hidden;
+}
+table.my-table-scroll7>tbody {
+  border-bottom: #000000;
+  border-top: #000000;
+  height: 100px;
+}
+table.my-table-scroll7>thead>tr>th,
+table.my-table-scroll7>thead>tr>td,
+table.my-table-scroll7>tbody>tr>th,
+table.my-table-scroll7>tbody>tr>td,
+table.my-table-scroll7>tfoot>tr>th,
+table.my-table-scroll7>tfoot>tr>td {
+  display: inline-block;
+  border-bottom: #000000;
+  width: 20%;
+  border-top: #000000;
+}
+/*************address table********************************/
+table.my-table-scroll10,
+table.my-table-scroll10>tbody,
+table.my-table-scroll10>tfoot,
+table.my-table-scroll10>tbody>tr,
+table.my-table-scroll10>thead>tr {
+  display: block;
+  border-top: #000000;
+  border-bottom: #000000;
+}
+table.my-table-scroll10>thead{
+  width: 100%;
+  display: table;
+}
+table.my-table-scroll10>tbody,
+table.my-table-scroll10>tfoot {
+  border-top: #000000;
+  border-bottom: #000000;
+  display: block;
+  width: 100%;
+  overflow-y: auto;
+}
+
+table.my-table-scroll10>thead,
+table.my-table-scroll10>tfoot {
+  border-bottom: #000000;
+  border-top: #000000;
+  overflow-y: hidden;
+}
+table.my-table-scroll10>tbody {
+  border-bottom: #000000;
+  border-top: #000000;
+  height: 125px;
+}
+table.my-table-scroll10>thead>tr>th,
+table.my-table-scroll10>thead>tr>td,
+table.my-table-scroll10>tbody>tr>th,
+table.my-table-scroll10>tbody>tr>td,
+table.my-table-scroll10>tfoot>tr>th,
+table.my-table-scroll10>tfoot>tr>td {
+  display: inline-block;
+  border-bottom: #000000;
+  width: 25%;
+  white-space: nowrap;
+  border-top: #000000;
+}
+
+
+/*************wallet address table********************************/
+table.my-table-scroll11,
+table.my-table-scroll11>thead,
+table.my-table-scroll11>tbody,
+table.my-table-scroll11>tfoot,
+table.my-table-scroll11>tbody>tr,
+table.my-table-scroll11>thead>tr {
+  display: block;
+}
+
+table.my-table-scroll11>thead,
+table.my-table-scroll11>tbody,
+table.my-table-scroll11>tfoot {
+  display: block;
+  width: 100%;
+  overflow-y: auto;
+}
+
+table.my-table-scroll11>thead,
+table.my-table-scroll11>tfoot { 
+  overflow-y: hidden;
+}
+table.my-table-scroll11>tbody {
+  height: 100px;
+}
+table.my-table-scroll11>thead>tr>th,
+table.my-table-scroll11>thead>tr>td,
+table.my-table-scroll11>tbody>tr>th,
+table.my-table-scroll11>tbody>tr>td,
+table.my-table-scroll11>tfoot>tr>th,
+table.my-table-scroll11>tfoot>tr>td {
+  display: inline-block;
+  border-bottom: #000000;
+  width: 20%;
+  white-space: nowrap;
+}
+
+/*************balances table********************************/
+table.my-table-scroll12,
+table.my-table-scroll12>tbody,
+table.my-table-scroll12>tfoot,
+table.my-table-scroll12>tbody>tr,
+table.my-table-scroll12>thead>tr {
+  width: 100%;
+  display: block;
+  border-top: #000000;
+  border-bottom: #000000;
+}
+table.my-table-scroll12>thead{
+  width: 100%;
+  display: table;
+}
+table.my-table-scroll12>tbody,
+table.my-table-scroll12>tfoot {
+  border-top: #000000;
+  border-bottom: #000000;
+  display: block;
+  width: 102.6%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+table.my-table-scroll12>thead,
+table.my-table-scroll12>tfoot {
+  border-bottom: #000000;
+  border-top: #000000;
+  overflow-y: hidden;
+  width: 100%;
+}
+table.my-table-scroll12>tbody {
+  border-bottom: #000000;
+  border-top: #000000;
+  height: 425px;
+}
+table.my-table-scroll12>thead>tr>th,
+table.my-table-scroll12>thead>tr>td,
+table.my-table-scroll12>tbody>tr>th,
+table.my-table-scroll12>tbody>tr>td,
+table.my-table-scroll12>tfoot>tr>th,
+table.my-table-scroll12>tfoot>tr>td {
+  display: inline-block;
+  border-bottom: #000000;
+  width: 13.8%;
+  border-top: #000000;
+}
+
+/**************** witdraw deposit modal ********************************/
+table.my-table-scroll13,
+table.my-table-scroll13>thead,
+table.my-table-scroll13>tbody,
+table.my-table-scroll13>tfoot,
+table.my-table-scroll13>tbody>tr,
+table.my-table-scroll13>thead>tr {
+  display: block;
+  border-top: #000000;
+  border-bottom: #000000;
+}
+
+table.my-table-scroll13>thead,
+table.my-table-scroll13>tbody,
+table.my-table-scroll13>tfoot {
+  border-top: #000000;
+  border-bottom: #000000;
+  display: block;
+  width: 100%;
+  overflow-y: auto;
+}
+
+table.my-table-scroll13>thead,
+table.my-table-scroll13>tfoot {
+  border-bottom: #000000;
+  border-top: #000000;
+  overflow-y: hidden;
+}
+table.my-table-scroll13>tbody {
+  border-bottom: #000000;
+  border-top: #000000;
+  height: 100px;
+}
+table.my-table-scroll13>thead>tr>th,
+table.my-table-scroll13>thead>tr>td,
+table.my-table-scroll13>tbody>tr>th,
+table.my-table-scroll13>tbody>tr>td,
+table.my-table-scroll13>tfoot>tr>th,
+table.my-table-scroll13>tfoot>tr>td {
+  display: inline-block;
+  border-bottom: #000000;
+  width: 20%;
+  white-space: nowrap;
+  border-top: #000000;
+}
+
+
+
+/*************24 hour asset table mOBILE********************************/
+table.my-table-scroll4M{
+  overflow-x: scroll;
+}
+table.my-table-scroll4M,
+table.my-table-scroll4M>tbody,
+table.my-table-scroll4M>tfoot,
+table.my-table-scroll4M>tbody>tr,
+table.my-table-scroll4M>thead>tr {
+  width: 105%;
+  display: block;
+  border-top: #000000;
+  border-bottom: #000000;
+}
+table.my-table-scroll4M>thead{
+  width: 100%;
+  display: table;
+}
+
+table.my-table-scroll4M>tbody,
+table.my-table-scroll4M>tfoot {
+  border-top: #000000;
+  border-bottom: #000000;
+  display: block;
+  overflow-y: auto;
+  width: 100%;
+  margin-bottom:25px;
+  overflow-x: hidden;
+}
+
+table.my-table-scroll4M>thead,
+table.my-table-scroll4M>tfoot {
+  border-bottom: #000000;
+  border-top: #000000;
+}
+table.my-table-scroll4M>tbody {
+  border-bottom: #000000;
+  border-top: #000000;
+  max-height: 325px;
+  margin-bottom:30px;
+}
+table.my-table-scroll4M>thead>tr>th,
+table.my-table-scroll4M>thead>tr>td,
+table.my-table-scroll4M>tbody>tr>th,
+table.my-table-scroll4M>tbody>tr>td,
+table.my-table-scroll4M>tfoot>tr>th,
+table.my-table-scroll4M>tfoot>tr>td {
+  display:inline-block;
+  border-bottom: #000000;
+  border-top: #000000;
+  white-space: nowrap;
+  width:20%;
+}
+
+
+
+.exchangeEmblem{
+  font-family: 'Montserrat', sans-serif !important;
+  font-size:16px;
+  color:white;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.tabs.mytabs .nav-tabs .nav-link.active {
+  background-color: #000000 !important;
+  color: white;
+  font-weight: bold;
+  border-bottom: #047ea4;  
+}
+.tabs.mytabs .nav-link {
+  color: rgb(170, 162, 162);
+}
+
+.tab { 
+  margin-left: 40px;
+ }
+ 
+.searchBtn {
+  width: 30px;
+  border: 2px solid rgb(255, 255, 255);
+  background: transparent;
+  border-radius: 25px;
+  height: 27px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: bold;
+  outline-style: none;
+  font-size: 11px;
+}
+.capitalize { 
+  text-transform: capitalize; 
+}
+
+.search {
+  width: 90px;
+  border: 2px solid rgb(255, 255, 255);
+  background: transparent;
+  border-radius: 25px;
+  height: 27px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: bold;
+  outline-style: none;
+  font-size: 12px;
+}
+
+.size {
+  width: 100px;
+  position: relative;
+  left: -1%;
+  border-radius: 15px;
+  background: black;
+}
+
+.filterBar {
+  margin-top: -200px;
+}
+
+.footerStyle {
+  display: inline-block;
+  z-index: 2;
+  position: relative;
+  top: -65px;
+}
+
+.derivative-label {
+  color: rgb(126, 27, 27);
+  font-size: 12px;
+
+}
+.border-set {
+  border: 5px solid rgb(37, 36, 36);
+}
